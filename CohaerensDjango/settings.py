@@ -26,7 +26,8 @@ SECRET_KEY = '@c&#qet6re=j_#p4*s99dkrv)i-i$526%*p*u9+5vehknq05$6'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'coha.herokuapp.com',
+        'coha.herokuapp.com',
+        '127.0.0.1',
     ]
 
 
@@ -127,7 +128,3 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
